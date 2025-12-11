@@ -1,31 +1,57 @@
-# 🎵 GestureSynth A-Vision-Based-Hand-Gesture-System-for-Expressive-Musical-Performance
-Course Project For Foundations of Human Computer Interaction (MSDS)
+# GestureSynth – Hand-Gesture MIDI Controller
 
+![GestureSynth Demo](demo.gif)  
+*Turn hand gestures into expressive MIDI music using just a webcam.*
 
-
-**Turn your hand gestures into real-time MIDI music** using just a webcam. No keyboard, no MIDI controller — just your hands and a computer.
-
-GestureSynth uses **MediaPipe** for hand tracking and **MIDI** for musical output, with optional **LLM-powered musical feedback** to help you improve your expressive performance.
-
-https://github.com/user/GestureSynth/assets/123456789/gesture_demo.gif
+GestureSynth is a real-time, vision-based MIDI controller that translates hand movement into musical notes. Using MediaPipe for hand tracking and PyQt5 for the interface, it maps hand position to pitch, velocity, and even chords—routing output to any DAW or virtual instrument.
 
 ---
 
 ## ✨ Features
 
-- Real-time hand-to-MIDI conversion
-- Pitch mapped to vertical hand position
-- Velocity mapped to horizontal/vertical position or fixed
-- Chord mode (Major, Minor, 7th)
-- MIDI recording & export (.mid files)
-- **Adaptive Mode**: LLM analyzes your performance and suggests parameter tweaks
-- Responsive UI with gesture preview and note guide
+- **Real-time gesture-to-MIDI conversion** at 30 FPS
+- **Multiple velocity modes**: vertical, horizontal, or fixed
+- **Chord mode**: play major, minor, or 7th chords with one hand
+- **Automatic parameter tuning** via LLM analysis of your playing style
+- **MIDI recording & export** as standard `.mid` files
+- **Fully offline processing** – your webcam data never leaves your machine
+- **Responsive, HCI-optimized UI** following Fitts’s Law, Hick’s Law, and Gestalt principles
 
 ---
 
-## 🚀 Quick Start
+## 🖥️ Requirements
 
-### 1. Clone the repo
+- Python 3.8+
+- A standard webcam
+- MIDI-compatible software or hardware (e.g., Ableton Live, FL Studio, GarageBand, Microsoft GS Wavetable Synth)
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/GestureSynth.git
-cd GestureSynth
+git clone https://github.com/your-username/gesturesynth.git
+cd gesturesynth
+```
+
+---
+## 📁 Project Structure
+
+<img width="783" height="233" alt="image" src="https://github.com/user-attachments/assets/5338e346-e6f4-426a-b89c-371d671aae7c" />
+
+
+---
+## 🎯 Use Cases
+
+    Music Education: Visual pitch/velocity feedback for students
+    Live Performance: Expressive, wireless gestural control
+    Accessibility: Play music without physical instruments
+    Prototyping: Test musical ideas through movement
+---
+## Acknowledgements
+
+    MediaPipe by Google for real-time hand tracking
+    Mido for MIDI handling in Python
+    Groq for fast LLM inference
+    PyQt5 for the cross-platform desktop interface
