@@ -1,7 +1,5 @@
 # GestureSynth – Hand-Gesture MIDI Controller
 
-![GestureSynth Demo](demo.gif)  
-*Turn hand gestures into expressive MIDI music using just a webcam.*
 
 GestureSynth is a real-time, vision-based MIDI controller that translates hand movement into musical notes. Using MediaPipe for hand tracking and PyQt5 for the interface, it maps hand position to pitch, velocity, and even chords—routing output to any DAW or virtual instrument.
 
